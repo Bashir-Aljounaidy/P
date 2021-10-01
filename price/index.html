@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="index_files/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="index_files/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="index_files/favicon-16x16.png">
+        <link rel="manifest" href="index_files/site.webmanifest">
+        <link rel="mask-icon" href="index_files/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="index_files/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="index_files/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width">
+        <title>PriceCalc</title>
+        <script src="./index_files/index.js"></script>
+        <link href="./index_files/index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    
+    <!--Form-->
+    <h3>حاسبة اسعار </h3>
+    <form id="frm">
+    <label>الصق الطلبية</label><br>
+    <textarea name="description" rows="4">    </textarea><br>
+    <label>اختر الرتبة</label>
+    <select id="ranklist">
+    <option value="as">مساعد مشرف</option>
+    <option value="s">مشرف</option>
+    <option value="nd">جديد</option>
+    <option value="am">مساعد منجر</option>
+    <option value="m">منجر</option>
+    </select>
+    <br>
+    <label>التوصيل  :</label>
+    <input id="deliveryPrice" type="number" value="60">
+    <br>
+    <label>اسم المنتج</label>
+    <select id="list">
+    <option en="" code="" cc="" re="" nd="" as="" s="" am="" m="" sh="">===================</option>
+    <option en="ALOE VERA GEL" code="15" cc="0.113" re="113" nd="96" as="74" s="70" am="65" m="60" sh="0">عصير الصبار الالوفيرا</option>
+    <option en="FOREVER FIBER" code="464" cc="0.13" re="129" nd="110" as="84" s="80" am="74" m="68" sh="0">فايبر</option>
+    <option en="lite ultra" code="470" cc="0.138" re="206" nd="185" as="158" s="154" am="147" m="140" sh="0">ميلك شيك</option>
+    <option en="GARCINA PLUS" code="71" cc="0.148" re="135" nd="115" as="88" s="84" am="77" m="71" sh="12">جارسينيا بلس</option>
+    <option en="Forever therm" code="463" cc="0.129" re="117" nd="100" as="77" s="73" am="67" m="61" sh="12">ثيرم</option>
+    <option en="cup" code="0" cc="0" re="0" nd="0" as="0" s="0" am="0" m="0" sh="20">كرتونة</option>
+    <option en="cup" code="0" cc="0" re="0" nd="0" as="0" s="0" am="0" m="0" sh="15">كاسة</option>
+    <option en="cup" code="0" cc="0" re="0" nd="0" as="0" s="0" am="0" m="0" sh="5">متر</option>
+    <option en="ALOE BLOSSOM HERBAL TEA" code="200" cc="0.079" re="72" nd="62" as="47" s="45" am="42" m="38" sh="15">شاي</option>
+    <option en="FIELDS OF GREENS" code="68" cc="0.054" re="50" nd="43" as="33" s="31" am="29" m="26" sh="15">جرين اوف فيلدز</option>
+    <option en="MULTI MACA" code="215" cc="0.118" re="108" nd="92" as="71" s="67" am="62" m="57" sh="15">مالتي ماكا</option>
+    <option en="Forever lean" code="289" cc="0.208" re="171" nd="146" as="112" s="107" am="98" m="89" sh="15">لين</option>
+    <option en="" code="" cc="" re="" nd="" as="" s="" am="" m="" sh="">===================</option>
+    </select><br>
+    <label>العدد  :</label>
+    <input id="pqty" type="number"><br>
+     <label>سعر البيع:</label>
+    <input id="Want" type="number">
+    <br>
+    </form>
+    <button type="add" onclick="addItem()">اضف المنتج</button>
+
+    
+    
+    <div id="cart"></div>
+
+
+
+    
+</body></html>
